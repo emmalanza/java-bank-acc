@@ -36,5 +36,12 @@ public class Account {
         balance -= monthlyFee;
         calculateMonthlyInterest();
     }
+    public void print() {
+        System.out.println("Balance: " + balance);
+        System.out.println("Number of Deposits: " + numDeposits);
+        System.out.println("Number of Withdrawals: " + numWithdrawals);
+        System.out.println("Annual Rate: " + annualRate);
+        System.out.println("Monthly Fee: " + monthlyFee);
+    }
 
 }
