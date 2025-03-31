@@ -1,0 +1,31 @@
+# Maven build files
+target/
+
+# VSCode configuration files
+.vscode/
+
+# Eclipse configuration files, if any
+.project
+.classpath
+.settings/
+
+# IntelliJ IDEA configuration files, if any
+.idea/
+*.iml
+
+# Log files generated during execution
+*.log
+
+# Scripts
+*.sh
+
+# Maven wrapper dependencies
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Temporary system files
+.DS_Store
+Thumbs.db
+
+# Compiled Java class files
+*.class
