@@ -38,4 +38,12 @@ public class CurrentAccount extends Account {
             super.deposit(amount);
         }
     }
+
+    @Override
+    public void print() {
+        System.out.println("Balance: " + balance);
+        System.out.println("Monthly Fee: " + monthlyFee);
+        System.out.println("Total transactions: " + (numDeposits + numWithdrawals));
+        System.out.println("Overdraft: " + overdraft);
+    }
 }
