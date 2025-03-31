@@ -31,5 +31,10 @@ public class Account {
         double monthlyInterest = (annualRate / 12) * balance / 100;
         balance += monthlyInterest;
     }
-    
+
+    public void monthlyStatement() {
+        balance -= monthlyFee;
+        calculateMonthlyInterest();
+    }
+
 }
