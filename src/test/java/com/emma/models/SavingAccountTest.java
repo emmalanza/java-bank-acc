@@ -12,4 +12,11 @@ public class SavingAccountTest {
         account.deposit(2000);
         assertEquals(5000, account.balance);
     }
+
+    @Test
+    void testCannotWithDrawWhenIsInactive() {
+        SavingAccount account = new SavingAccount(5000, 5);
+        account.withdraw(2000);
+        assertEquals(5000, account.balance);
+    }
 }
