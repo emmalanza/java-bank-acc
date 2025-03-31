@@ -19,5 +19,9 @@ public class Account {
             numDeposits++;
         }
     }
-    
+
+    public void withdraw(double amount) {
+        balance -= amount;
+    }
+
 }
