@@ -32,5 +32,12 @@ public class SavingAccount extends Account {
         }
         active = balance >= 10000;
     }
+
+    @Override
+    public void print() {
+        System.out.println("Balance: " + balance);
+        System.out.println("Monthly Fee: " + monthlyFee);
+        System.out.println("Total transactions: " + (numDeposits + numWithdrawals));
+    }
     
 }
